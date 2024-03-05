@@ -1,0 +1,54 @@
+<div class="container">
+    <form action="" [formGroup]="webhook" (ngSubmit)="submit()">
+        <div class="form-container">
+            <div class="input-fields" >
+                <label for="">Name *</label>
+                <input type="text" formControlName="name" placeholder="webhook Name">
+            </div>
+            <div class="input-fields">
+                <label for="">Delivery URL *</label>
+                <input type="text" formControlName="url" placeholder="webhook URL">
+            </div>
+            <div class="input-fields">
+                <label for="">Secret</label>
+                <input type="text" formControlName="name">
+            </div>
+            <div class="input-fields">
+                <label for="">Status</label>
+               <select name="" id=""  formControlName="selectOne">
+                 <option value="">Active</option>
+                 <option value="">Pause</option>
+                 <option value="">Disabled</option>
+               </select>
+            </div>
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+   <div class="left">
+    <div class="left-container">
+        <p><b>Webhooks are event notifications sent to URLs of your choice. Use these to receive real time shipment updates in your system.</b></p>
+        <p><b>Name:</b> Used to easily identify webhook.</p>
+        <p><b>Delivery URL:</b> URL where the webhook payload is delivered.</p>
+        <p><b>Secret:</b> The Secret Key generates a hash of the delivered webhook and is provided in the request headers. No hash generated if left blank.</p>
+        <p><b>Status:</b> Set to Active (delivers payload), Paused (does not deliver), or Disabled (does not deliver due delivery failures).</p>
+        <p><b>Timeout:</b> System has a five second timeout period. It waits five seconds for a response to each request to a webhook. If there is no response, or an error is returned, then request is marked as failed. If there are 50 consecutive failures, then the webhook automatically get disabled.</p>
+        <p><b>Webhook Response:</b> Your webhook acknowledges that it received data by sending a 200 OK response. Any response outside of the 200 range, including 3XX HTTP redirection codes, indicates that you did not receive the webhook. System does not follow redirects for webhook notifications and considers them to be an error response.</p>
+        <p><b>Verifying Webhooks: </b> Webhooks data can be verified by calculating a digital signature. Each webhook request includes a base64-encoded X-Hmac-SHA256 header, which is generated using the secret key along with the data sent in the request. Here is sample hash generation method:
+            <br>
+            <code>$hash = base64_encode(hash_hmac('sha256', 'webhook_data_here', 'your_secret_here', true));</code>
+        </p>
+        <p><b>Sample Payload:</b><br></p>
+            <pre>
+                "awb_number": "4152912381315",  
+                 "status": "in transit",
+                "event_time": "2021-02-26 16:19:59",  
+                  "location": "Delhi",
+                "message": "Reached at nearest hub",
+                "rto_awb": ""
+            </pre>
+        
+    </div>
+   </div>
+</div>

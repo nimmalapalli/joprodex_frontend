@@ -1,0 +1,19 @@
+.table{
+    overflow-x: auto;
+  }
+  .demo-table {
+    width: 100%;
+    border: 1px solid #f4f4f4;
+  }
+  
+  
+  th{
+    color: #0F4588;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  td, th {
+    width: 15%;
+    position: relative;
+    border: 1px solid #f4f4f4;
+  }

@@ -1,0 +1,97 @@
+h1{
+    margin: 0 20px;
+    
+    padding: 15px 0;
+}
+hr{
+    margin:20px 0;
+}
+h2{
+    margin: 10px 50px;
+}
+p{
+    margin: 10px 50px;
+    font-size: 17px;
+}
+.invoice{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 15px;
+}
+.in{
+    width: 550px;
+    height: 1230px;
+    border: 2px solid whitesmoke;
+}
+.in1{
+    width: 550px;
+    height: 1230px;
+    border: 2px solid whitesmoke;
+
+}
+.choosefile{
+    width: 380px;
+    height: 30px;
+    border: 1px solid skyblue;
+    border-radius: 3px;
+    margin: 10px 50px;
+}
+.image{
+    width: 120px;
+    height: 100px;
+    border: 3px solid whitesmoke;
+    margin: 10px 50px;
+}
+h3{
+    font-size: 30px;
+    margin: 20px 10px;
+    color:  whitesmoke;
+
+}
+table{
+    width: 100px;
+    height: 50;
+    border: 1px solid  black;
+    margin: 10px 50px;
+    
+    
+} 
+.column{
+    width: 200px;
+    height: 30px;
+    
+}
+.btn{
+    width: 150px;
+    height: 45px;
+    color: #ffff;
+    background-color:#4C66FB;
+    border: none;
+    border-radius: 3px;
+    margin: 30px 200px;
+}
+.submit{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color:#4C66FB ;
+    border-radius: 3px;
+}
+.form-control{
+border: 1px soid #999;
+border-radius: 5px;
+margin: 10px 50px;
+}
+input[type=file] {
+    height: 35px;
+    background-color: transparent;
+    padding: 10px;
+}
+.delete{
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    background-color:#F25458 ;
+    border-radius: 3px;
+}

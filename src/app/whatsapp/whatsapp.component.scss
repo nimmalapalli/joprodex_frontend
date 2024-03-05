@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for the accordion */
+// .accordion {
+//     border: 1px solid #ddd;
+//     border-radius: 4px;
+//     overflow: hidden;
+//   }
+  
+  /* Styles for accordion items */
+//   .accordion-item {
+//     border-bottom: 1px solid #ddd;
+//   }
+  
+  /* Styles for accordion titles */
+  .accordion-title {
+    background-color: #f5f5f5;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Styles for accordion content */
+//   .accordion-content {
+//     background-color: #fff;
+//     padding: 10px;
+//     transition: max-height 0.3s ease-out;
+//     max-height: 0;
+//     overflow: hidden;
+//   }
+  
+  /* Show content when accordion title is clicked */
+  .accordion-item.active .accordion-content {
+    max-height: 200px; 
+    width: 200px;/* Adjust height as needed */
+  }
+  

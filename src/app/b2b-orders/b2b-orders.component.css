@@ -1,0 +1,18 @@
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 5px 12px;
+    flex-wrap: wrap;
+}
+.group{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+th{
+    font-size: 16px;
+    color: rgb(14, 44, 174);
+}

@@ -1,0 +1,22 @@
+
+
+
+.form-control-sm{
+    outline: none;
+    border: 1px solid #999;
+}
+input,select,label{
+    display: block;
+    width: 100%;
+}
+#selectGroup{
+    display: flex;
+    align-items: center;
+}
+#code{
+    display: flex;
+    align-items: center;
+}
+#btn{
+    padding: 2px 12px;
+}

@@ -1,0 +1,30 @@
+.form-row{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.form-control-sm{
+    outline: none;
+    border: 1px solid #999;
+}
+input,textarea{
+    display: block;
+    width: 100%;
+}
+.custom-file{
+ 
+    padding: 0;
+    margin: 0;
+}
+#inputGroupFile,#filesGroup{
+    height: 35px;
+    padding: 5px 12px;
+    font-size: 16px;
+   
+}
+@media (max-width:400px) {
+
+    .form-row{
+       flex-direction: column;
+    }
+}

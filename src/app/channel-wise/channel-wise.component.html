@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="container-head">
+        <label for="">Date Range:</label>
+        <input type="text" autocomplete="off" data-start-data="2023-10-21" data-end-time="2023-11-20" class="Data-range">
+    </div>
+    
+    <div class="select">
+      <label for="method">Select Channel</label>
+     <select name="" id="">
+           <option value="all">Select Channel</option>
+       </select>  
+ </div>
+    <div class="button">
+        <button id="btn1">Apply</button>
+        <button id="btn2">Clear</button>
+    </div>
+</div>
+
+<div class="table" style="margin: 10px;">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+    <!-- Position Column -->
+    <ng-container matColumnDef="demo-Channel">
+      <th mat-header-cell *matHeaderCellDef>CHANNEL NAME</th>
+      <td mat-cell *matCellDef="let element"> {{element.channel}} </td>
+    </ng-container>
+    <ng-container matColumnDef="demo-total">
+      <th mat-header-cell *matHeaderCellDef>TOTAL ORDER</th>
+      <td mat-cell *matCellDef="let element"> {{element.total}} </td>
+    </ng-container>
+  
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="demo-count">
+      <th mat-header-cell *matHeaderCellDef>Total SHIPMENT</th>
+      <td mat-cell *matCellDef="let element"> {{element.count}} </td>
+    </ng-container>
+  
+    <!-- Weight Column -->
+    <ng-container matColumnDef="demo-weight">
+      <th mat-header-cell *matHeaderCellDef>BOOKED</th>
+      <td mat-cell *matCellDef="let element"> {{element.booked}} </td>
+    </ng-container>
+  
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="demo-symbol">
+      <th mat-header-cell *matHeaderCellDef>PENDING PICKUP</th>
+      <td mat-cell *matCellDef="let element"> {{element.pickup}} </td>
+    </ng-container>
+    <ng-container matColumnDef="demo-transit">
+        <th mat-header-cell *matHeaderCellDef>IN TRANSIT</th>
+        <td mat-cell *matCellDef="let element"> {{element.transit}} </td>
+      </ng-container>
+      <ng-container matColumnDef="demo-DELIVERED">
+        <th mat-header-cell *matHeaderCellDef>DELIVERED	</th>
+        <td mat-cell *matCellDef="let element"> {{element.delivered}} </td>
+      </ng-container>
+      <ng-container matColumnDef="dem-RTO">
+        <th mat-header-cell *matHeaderCellDef>RTO</th>
+        <td mat-cell *matCellDef="let element"> {{element.rto}} </td>
+      </ng-container>
+      
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+  
+  
+      
+</div>
+

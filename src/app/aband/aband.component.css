@@ -1,0 +1,32 @@
+p{
+    padding: 19px 20px;
+}
+.aband{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.aband1{
+    width: 350px;
+    height: 50px;
+   background-color:#fbcfd1;
+   margin: 0 10px;
+   border-radius: 3px;
+   color: #7E2C2F;
+   
+}
+.sbt{
+    width: 80px;
+    height: 38px;
+    background-color:#4C66FB;
+    margin: 0 600px;
+    border-radius: 3px;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+
+}
+h1{
+    border-bottom: 2px solid #f4f4f4;
+    padding: 10px ;
+}

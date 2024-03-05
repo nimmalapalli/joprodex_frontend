@@ -1,0 +1,137 @@
+*{
+  margin: 0;
+  
+  padding: 0;
+}
+.container-fluid{
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 0 auto;
+  padding: 10px 10px 30px 10px;
+  background: #e3eaf6;
+  border-radius: 6px;
+  
+  
+}
+.card-container-1{
+  width: 30%;
+  padding: 10px;
+  background-color: #ecf0f4;
+  // box-shadow: 5px 5px 10px ; /* Horizontal offset 5px, Vertical offset 5px, Blur radius 10px, Color #888888 */
+  border-radius: 15px;
+}
+.card-container-1 >h3{
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 10px;
+  color: #111222;
+}
+.card-container-1 >p{
+  font-size: 18px;
+  line-height: 1.4;
+  color: #2E384D;
+  word-spacing: 4px;
+  padding-right: 40px;
+  margin: 20px 30px 40px 30px;
+}
+.card-container-1>img{
+  height: 200px;
+  margin: 50px 30px 50px 40px;
+}
+.maincard-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 70%;
+  gap: 10px;
+}
+.card-body{
+  
+  padding: 20px;
+  height: 200px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #fff;
+  // box-shadow: 5px 5px 10px #f4f4f4; /* Horizontal offset 5px, Vertical offset 5px, Blur radius 10px, Color #888888 */
+  border-radius: 25px;
+
+
+}
+.card-body:hover{
+  box-shadow: 5px 5px 10px #888;
+}
+.card-body:active{
+  transform: scale(0.95);
+}
+a{
+  text-decoration: none;
+  color: #222;
+  padding: 5px;
+}
+.content{
+  background-color: #111222;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  margin: 10px  20px;
+
+}
+.content>h4{
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.2;
+ 
+ margin: 10px 0;
+}
+.cards>img{
+  height: 50px;
+  padding: 10px;
+  
+  border-radius: 15px;
+  margin: 20px 10px;
+  box-shadow: 0px 5px 5px  #888888; 
+}
+.cards>h3{
+  font-size: 22px;
+  font-weight: 600;
+  word-break: break;
+}
+.cards>p{
+  font-size: 16px;
+  font-weight: 550;
+  color: #999;
+}
+
+@media (max-width:900px) {
+  .card-container-1>img{
+    height: 100px;
+    margin: 10px;
+  
+  }
+}
+@media (max-width:600px) {
+  .card-container-1{
+      width: 100%;
+  }
+  .maincard-container{
+  
+      width: 100%;
+      margin: 10px 0 0 0;
+      justify-content: center;
+     
+  }
+  .container-fluid{
+      flex-direction: column;
+      
+  }
+  .card-body{
+      width: 350px;
+  }
+  
+  
+}

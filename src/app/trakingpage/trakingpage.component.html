@@ -1,0 +1,145 @@
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button class="nav-link home active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Settings</button>
+      <button class="nav-link home" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Banners</button>
+      <button class="nav-link home" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Header Menu</button>
+
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+        <div class="box-container">
+            <div class="leftbox">
+                <label class="domain">Subdomain</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" aria-label="" placeholder="Enter Brand Name">
+                    <span class="input-group-text">.Order.live</span>
+                </div>
+                <div class="check">
+                    <button class="btn">Check availabiity</button>
+                    <small>Your Tracking URL would be <span>.ordr.live</span></small>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Website URL </label>
+                    <input type="url" autocomplete="off" name="website_url" value="" class="form-control rounded-pill" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label class="form-label fw-400">Support Phone No. </label>
+                    <input type="text" pattern="[6789][0-9]{9}" title="Please enter valid phone number" name="support_phone" autocomplete="off" value="" class="form-control rounded-pill" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label class="form-label fw-400">Support Email</label>
+                    <input type="text" autocomplete="off" name="support_email" value="" class="form-control rounded-pill" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label class="form-label fw-400">Privacy Policy Link</label>
+                    <input type="url" autocomplete="off" name="privacy_link" value="" class="form-control rounded-pill" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label class="form-label d-block fw-400">Logo </label>
+                    <div class="custom-file">
+                        <input type="file" required="" accept="image/png, image/jpeg,image/jpg" class="custom-file-input" data-id="banner_desk" id="inputGroupFile02">
+                        <input type="hidden" name="banner_desktop" value="" id="logo_field_banner_desk">
+                        <label class="custom-file-label rounded-pill" for="inputGroupFile02">Choose file...</label>
+                    </div>
+                </div>
+                <div class="form-group mt-4">
+                    <button class="btn btn-dark btn-custom rounded-pill px-4">Submit</button>
+                </div>
+            </div>
+            <div class="rightbox" >
+                <div class="traking-bg"></div>
+                <div class="content-box">
+                    <h4 class="center">Engage your customers with a customized tracking</h4>
+                    <p class="">Hike your sales with a compelling brand visibility and ensure repeat purchase from your customers by customizing your tracking page. </p>
+                    <div class="gift">
+                        <img src="https://ship.nimbuspost.com/assets/img/watsapp-notification/traking-setting.gif" height="400px">
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+        <div class="box-container">
+            <div class="leftbox" >
+                <h4 class="fw-600 text-dark">Add Your Banner</h4>
+                <p>Grab the attention of your customers, indulge them in re-purchasing the products, and boost your conversion rate by using unique promotional banners on the tracking page.</p>
+                <div class="form-group">
+                    <label class="form-label fw-400">Alt Text  <small>(Optional)</small></label>
+                    <input type="text" name="alt_text" autocomplete="off" value="" class="form-control rounded-pill" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label class="form-label fw-400">Link <small>(Enter the URL which should open when a buyer clicks on the banner) </small> </label>
+                    <input type="url" name="banner_link" autocomplete="off" required="" value="" class="form-control rounded-pill" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label class="form-label d-block fw-400"><i class="mdi mdi-desktop-mac"></i> Banner Image <small>(Desktop)</small> </label>
+                    <div class="custom-file">
+                        <input type="file" required="" accept="image/png, image/jpeg,image/jpg" class="custom-file-input" data-id="banner_desk" id="inputGroupFile02">
+                        <input type="hidden" name="banner_desktop" value="" id="logo_field_banner_desk">
+                        <label class="custom-file-label rounded-pill" for="inputGroupFile02">Choose file...</label>
+                    </div>
+                    <div class="img-show my-3">
+                        
+                        <img src="https://ship.nimbuspost.com/assets/img/watsapp-notification/required-img.png" id="blah" class="srn_bnr">
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label d-block "><i class="mdi mdi-cellphone-android"></i> Banner Image <small>(Mobile)</small> </label>
+                    <div class="custom-file">
+                        <input type="file" accept="image/png, image/jpeg,image/jpg" class="custom-file-input" data-id="banner_mob" id="inputGroupFile03">
+                        <input type="hidden" name="banner_mobile" value="" id="logo_field_banner_mob">
+                        <label class="custom-file-label rounded-pill" for="inputGroupFile03">Choose file...</label>
+                    </div>
+                    <div class="img-show my-3">
+                        <img src="https://ship.nimbuspost.com/assets/img/watsapp-notification/required-img.png" id="blah1">
+                    </div>
+                </div>
+                <div class="form-group mt-4">
+                    <button class="btn btn-dark btn-custom rounded-pill px-4 banner_add_validation" type="submit">Submit</button>
+                </div>
+            </div>
+            <div class="rightbox box-item" >
+                <div class="traking-bg absolute"></div>
+                <div class="content-box ">
+                   
+                    <div class="gift">
+                        <img src="https://ship.nimbuspost.com/assets/img/watsapp-notification/add-bannermenu.gif" height="450px">
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+        <div class="box-container">
+            <div class="leftbox" >
+                <h4>Add Header Menu Links</h4>
+                <p>Navigate customers on your desired webpage/s to drive more sales while customers track their orders.</p>
+                <div class="form-row" id="">
+                    <div class="form-group">
+                        <label class="form-label">Menu Name</label>
+                        <input type="text" name="menu_name[]" autocomplete="off" class="form-control rounded-pill check_empty" placeholder="Enter menu name" required="">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Menu Link</label>
+                        <input type="url" name="menu" autocomplete="off" class="form-control rounded-pill" placeholder="Enter menu link" required="">
+                    </div>
+                </div>
+                <div class="form-groups">
+                    <button type="button" class="btn btn-success rounded-pill " id="add_new_menu"> <span>+</span> Add New</button>
+                    <button class="btn btn-dark rounded-pill "  type="submit" style="margin-left: 10px;">Save Menu</button>
+                </div>
+            </div>
+            <div class="rightbox box-item" >
+                <div class="traking-bg absolute"></div>
+                <div class="content-box">
+                   
+                    <div class="gift">
+                        <img src="https://ship.nimbuspost.com/assets/img/watsapp-notification/add-bannermenu.gif" height="450px">
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>

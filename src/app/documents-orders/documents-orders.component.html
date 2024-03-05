@@ -1,0 +1,75 @@
+<div class="container-fluid">
+    <div class="card-header">
+        <h4>Documents Orders</h4>
+        <div class="group">
+           
+            <button class="btn btn-outline-dark btn-sm">Export</button> 
+            <button class="btn btn-outline-dark btn-sm" routerLink="/create-document">Create Forward Order</button>  
+            <button class="btn btn-outline-dark btn-sm">Filters</button> 
+            <button type="button" class="btn btn-outline-dark show_hide_filter btn-sm" style="display:none;"> Close </button>
+            <!-- <button class="btn btn-sm btn-dark" title="How to Process B2b Orders" data-toggle="modal" data-target="#exampleModalCenter"></button> -->
+        </div>
+    </div>
+    <div class="row border-top my-3 py-2 ">
+        <div class="col-sm-10">
+          <div class="btn-group mx-2" role="group">
+            <a routerLink="#" class="btn btn-outline-dark btns" (click)="showOrdersByStatus('All')">All Orders</a>
+            <a routerLink="#" class="btn btn-outline-dark" (click)="showOrdersByStatus('Not Shipped')">Not Shipped ({{ countOrdersByStatus('Not Shipped') }})</a>
+            <a routerLink="#" class="btn btn-outline-dark" (click)="showOrdersByStatus('Booked')">Booked ({{ countOrdersByStatus('Booked') }})</a>
+            <a routerLink="#" class="btn btn-outline-dark" (click)="showOrdersByStatus('Cancelled')">Cancelled ({{ countOrdersByStatus('Cancelled') }})</a>
+            <a routerLink="#" class="btn btn-outline-dark" (click)="showOrdersByStatus('Testing')">Testing ({{ countOrdersByStatus('Testing') }})</a>
+            <a routerLink="#" class="btn btn-outline-dark btnl" (click)="showOrdersByStatus('Test')">Test ({{ countOrdersByStatus('Test') }})</a>
+          </div>
+        </div>
+        <div class="col-sm-2 ">
+          <a href="#" class="text-primary add_segment_button" data-segment-id="" style="text-decoration: none;" >
+            <b>Add Segment</b>
+          </a>
+        </div>
+      </div>
+    
+        <table class="table">
+          <thead>
+            <tr>
+              <th>CHANNEL</th>
+              <th>ORDER</th>
+              <th>DATE</th>
+              <th>PRODUCT</th>
+              <th>PAYMENT</th>
+              <th>METHOD</th>
+              <th>CUSTOMER</th>
+              <th>PHONE</th>
+              <th>WEIGHT</th>
+              <th>IVR <br>STATUS</th>
+              <th>WHATSAPP <br>STATUS</th>
+              <th>SHOPIFY <br>TAGS</th>
+              <th>TAGS</th>
+              <th>STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of filteredOrderDetails">
+              <td>Custom</td>
+              <td>{{ item.channel }}</td>
+              <td>{{ item.order }}</td>
+              <td>{{ item.date }}</td>
+              <td>{{ item.product }}</td>
+              <td>{{ item.payment }}</td>
+              <td>{{ item.method }}</td>
+              <td>{{ item.customer }}</td>
+              <td>{{ item.phone }}</td>
+              <td>{{ item.weight }}</td>
+              <td>{{ item.ivrStatus }}</td>
+              <td>{{ item.whatsappStatus }}</td>
+              <td>{{ item.shopifyTags }}</td>
+              <td>{{ item.tags }}</td>
+              <!-- <td><input type="button" (click)="bookOrder()" value="Booked" class=" btn btn-sm btn-dark"></td> -->
+            </tr>
+          </tbody>
+        </table>
+        <div *ngIf="filteredOrderDetails.length === 0" class="alert alert-info mt-3 text-center">
+          No orders found.
+        </div>
+    
+      
+</div>

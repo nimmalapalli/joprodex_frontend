@@ -1,0 +1,129 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="(isHandset$ | async) === false">
+      <mat-toolbar style="background: blue; color:white">Joprodex </mat-toolbar>
+      <mat-nav-list>
+        <a mat-list-item class="nav" href="#">Dashboard</a> 
+        <a mat-list-item class="nav" href="#" routerLink="/b2b">Users</a>
+        <a mat-list-item class="nav" href="#">Shipments</a>
+        <a mat-list-item class="nav" href="#">Exception (NDR)</a>
+        <a mat-list-item class="nav" href="#">Weight Reco.</a>
+        <a mat-list-item class="nav" href="#">Billing</a>
+        <a mat-list-item class="nav" href="#">Reports</a>
+        <a mat-list-item class="nav" href="#">Addons</a>
+        <a mat-list-item class="nav" href="#">Settings</a>
+        <a mat-list-item class="nav" href="#">Support</a>
+        <a mat-list-item class="nav" href="#">Serviceable pincodes</a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <button
+      type="button"
+      aria-label="Toggle sidenav"
+      mat-icon-button
+      (click)="drawer.toggle()"
+    >
+      <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+    </button>
+<div class="container-btn">
+<!-- <button mat-stroked-button>Export</button>&nbsp;
+<button mat-stroked-button>Refresh</button>&nbsp;
+<button mat-stroked-button>Import</button>&nbsp; -->
+<button type="button" class="btn btn-light">Export</button>
+<button type="button" class="btn btn-light">Refresh</button>
+<button type="button" class="btn btn-light">Import</button>
+
+<button type="button" class="btn btn-light">Close</button>
+</div>
+<select class="form-select" aria-label="Default select example" style="width: 150px;">
+  <option selected>Open menu</option>
+  <option value="1">One</option>
+  <option value="2">Two</option>
+  <option value="3">Three</option>
+</select>
+<br><br>
+<table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <mat-label>User Id</mat-label>
+      <input matInput>
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <mat-label>Product name</mat-label>
+      <input matInput>
+    </mat-form-field></td>
+    <td>
+        <mat-form-field class="example-full-width">
+            <mat-label>search Query</mat-label>
+            <input matInput>
+          </mat-form-field>
+    </td>
+    <td> <mat-form-field>
+        <mat-label>Favorite food</mat-label>
+        <mat-select [(ngModel)]="selectedValue" name="food">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field></td>
+  </tr></table>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field>
+        <mat-label>Favorite food</mat-label>
+        <mat-select [(ngModel)]="selectedValue" name="food">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field></td>
+    <td><mat-form-field>
+        <mat-label>Favorite food</mat-label>
+        <mat-select [(ngModel)]="selectedValue" name="food">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field></td>
+    <td><mat-form-field>
+        <mat-label>Favorite food</mat-label>
+        <mat-select [(ngModel)]="selectedValue" name="food">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{food.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field></td>
+  </tr></table>
+ 
+<div class="container-table">
+
+  <table class="table table-success table-striped-columns">
+        <tr>
+          <th>id</th>
+          <th>User</th>
+          <th>date</th>
+          <th>payment</th>
+          <th>product</th>
+          <th>customer</th>
+          <th>phone</th>
+          <th>weight</th>
+         
+        </tr>
+        <tr *ngFor="let Users of User">
+          <td>{{Users._id}}</td>
+          <td>{{Users.order}}</td>
+          <td>{{Users.date}}</td>
+          <td>{{Users.payment}}</td>
+          <td>{{Users.product}}</td>
+          <td>{{Users.customer}}</td>
+          <td>{{Users.phone}}</td>
+          <td>{{Users.weight}}</td>
+        </tr>
+       </table>
+          <mat-paginator [pageSizeOptions]="[2, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+   
+</div>
+</mat-sidenav-content>
+</mat-sidenav-container>
+

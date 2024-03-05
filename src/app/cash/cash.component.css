@@ -1,0 +1,53 @@
+.cash{
+    display: flex;
+}
+.cash1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px; 
+    column-gap: 10px;
+    
+}
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+#selectOption{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+}
+#textInput{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+.box{
+    background-color: #ccf5eb;
+    border-radius: 10px;
+    padding: 10px; 
+    width: 250px;
+    height: 30px;
+}

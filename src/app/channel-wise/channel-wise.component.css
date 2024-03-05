@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans",sans-serif;
+  font-size: 18px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.container-head>label,.select>label{
+ 
+  display: block;
+  margin: 10px 0;
+}
+input,select{
+height: 35px;
+outline: none;
+border: 1px solid #999;
+border-radius: 5px;
+padding: 8px;
+}
+ #btn1,#btn2{
+  color: #fff;
+  font-size: 16px;
+  padding: 8px 12px;
+  background: #00cc99;
+  border: none;
+  border-radius: 4px;
+  margin: 10px 2px;
+}
+#btn2{
+  background: #007bff;
+}
+.table{
+overflow: auto;
+}
+.demo-table {
+  width: 100%;
+  border: 1px solid #f4f4f4;
+}
+
+td, th {
+  width: 15%;
+  position: relative;
+  border: 1px solid #f4f4f4;
+}
+th{
+  color: #0F4588;
+  font-size: 16px;
+  font-weight: 600;
+}

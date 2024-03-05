@@ -1,0 +1,324 @@
+<div class="container-fluid">
+   <form action="">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card ">
+                    <h5 >
+                        Customer Details
+                    </h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="form-group col-sm-6 input-group">
+                            <label >Order ID</label>
+                            <input type="text"  value="1703489583">
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label>Order Type</label>
+                            <input type="text"   value="Reverse">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label>First Name</label>
+                            <input type="text"  placeholder="First Name" >
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label>Last Name</label>
+                            <input type="text"  placeholder="Last Name" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            <label>Company Name</label>
+                            <input type="text"  placeholder="Company Name" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label>Address</label>
+                            <textarea   placeholder="Shipping Address"></textarea>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label>Address 2 (Optional)</label>
+                            <textarea placeholder="Address 2"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            <label>Pin Code</label>
+                            <input type="text"    placeholder="Pin Code" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label>City</label>
+                            <input type="text"   placeholder="City" >
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label>State</label>
+                            <input type="text"    placeholder="State" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-12">
+                            <label>Phone</label>
+                            <input type="text"    placeholder="Phone" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                    <h5 >
+                        Product Information
+                    </h5>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="form-group col-sm-6">
+                            <label>Product Name</label>
+                            <input type="text"   placeholder="Product Name" >
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label>Amount</label>
+                            <input type="text"   placeholder="Product Amount" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <table class="table-responsive">
+                                <tbody>
+                                    <tr>
+                                        <th >Weight*</th>
+                                        <td>
+                                            <div class="input-group">
+                                                <input type="text"  name="weight" placeholder="in grams" >
+                                            </div>
+                                            <p>eg: 500, 300</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th >Dimensions*</th>
+                                        <td>
+                                            <div class="input-group">
+                                                <input type="text"  class="form-control" placeholder="CM" >
+                                                <input type="text"  class="form-control" placeholder="CM" >
+                                                <input type="text"   class="form-control" placeholder="CM" >
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th >Volumetric Weight</th>
+                                        <td>
+                                            <div class="input-group" >
+                                                <input type="text"  placeholder="Volumetric Weight"  readonly="">
+                                                <span > Grams</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card ">
+                <div class="card-header">
+                    <label>QC Check Information</label>
+                    <div class="row" id="qc" >
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card ">
+                                            <h5 >
+                                                <strong>QC Questions</strong>
+                                            </h5>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="form-group col-sm-12">
+                                                    <label>Product Category</label>
+                                                    <select id="" >
+                                                        <option  data-select2-id="3">Select</option>
+                                                        <option value="1">Appliances</option>
+                                                        <option value="2">Beauty</option>
+                                                        <option value="3">Baby Products</option>
+                                                        <option value="4">Bags</option>
+                                                        <option value="5">Books</option>
+                                                        <option value="6">Car</option>
+                                                        <option value="7">Computers</option>
+                                                        <option value="8">Electronics</option>
+                                                        <option value="9">Fitness</option>
+                                                        <option value="10">Grocery</option>
+                                                        <option value="11">Home</option>
+                                                        <option value="12">Health</option>
+                                                        <option value="13">Industrial</option>
+                                                        <option value="14">Kids Fashion</option>
+                                                        <option value="15">Kitchen</option>
+                                                        <option value="16">Luggage</option>
+                                                        <option value="17">Mens Fashion</option>
+                                                        <option value="18">Mobiles</option>
+                                                        <option value="19">Motorbike</option>
+                                                        <option value="20">Pets</option>
+                                                        <option value="21">Sports</option>
+                                                        <option value="22">TV</option>
+                                                        <option value="23">Toys</option>
+                                                        <option value="24">Womens Fashion</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-sm-4">
+                                                    <div class="m-b-10">
+                                                        <p class="font-secondary" >Used Product</p>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" value="1"  class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline1">Yes</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" value="0"  class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline2">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-sm-4">
+                                                    <div class="m-b-10">
+                                                        <p class="font-secondary" >Damaged Product</p>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" value="1"  class="custom-control-input">
+                                                            <label class="custom-control-label" for="">Yes</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" value="0" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline4">No</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="form-group col-sm-4">
+                                                    <div class="m-b-10">
+                                                        <p class="font-secondary" >Match Brand Name</p>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" value="1" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline5">Yes</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" value="0" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline6">No</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-b-10" id="brandnamesection" style="display:none">
+                                                        <input type="text"    placeholder="Brand Name">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-sm-4">
+                                                    <div class="m-b-10">
+                                                        <p >Match Product Size</p>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" value="1" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline7">Yes</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" value="0"  class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline8">No</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-b-10" id="productsizesection" style="display:none">
+                                                        <input type="text"    placeholder="Product Size">
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-sm-4">
+                                                    <div class="m-b-10">
+                                                        <p>Match Product Color</p>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" value="1"  class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadioInline9">Yes</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="">No</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-b-10" id="productcolorsection" style="display:none">
+                                                        <input type="text"   placeholder="Product Colour">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card ">
+                                            <h5 >
+                                                <strong>Product Reference Images</strong>
+                                            </h5>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <div class="input-group mb-3">
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="firstimgupload">
+                                                            <input type="hidden"   id="uploadedfirstimg">
+                                                            <label class="custom-file-label">Image 1</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input"  id="secondimgupload">
+                                                            <input type="hidden"   id="uploadedsecondimg">
+                                                            <label class="custom-file-label">Image 2</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="thirdimgupload">
+                                                            <input type="hidden"   id="uploadedthirdimg">
+                                                            <label class="custom-file-label">Image 3</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input"  id="fourthimgupload">
+                                                            <input type="hidden"   id="uploadedfourthimg">
+                                                            <label class="custom-file-label">Image 4</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="">
+                <div class="form-group text-center m-3">
+                    <input type="submit"  class="btn btn-primary" value="Save">
+                    <a href="#" name="cancel" class="btn btn-danger">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </form>
+</div>

@@ -1,0 +1,51 @@
+<div class="container-fluid">
+  <div class="filter">
+      <div class="container-head">
+        <label for="">Date Range:</label>
+        <input type="text" autocomplete="off" data-start-data="2023-10-21" data-end-time="2023-11-20" class="form-control Data-range">
+      </div>
+      <div class="form-group">
+        <label for="method">Method:</label>
+        <select class="form-control">
+          <option value="all">All</option>
+          <option value="cod">COD</option>
+          <option value="pd">Prepaid</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="courierSelect">Courier:</label>
+        <select class="form-control" id="courierSelect">
+          <option value="all">All</option>
+          <option *ngFor="let option of Courier" [value]="option">{{ option }}</option>
+        </select>
+      </div>
+      <div class="button">
+        <button id="btn1" class="btn btn-primary">Apply</button>
+        <button id="btn2" class="btn btn-secondary">Clear</button>
+      </div>
+  </div>
+  <table class="table table-striped">
+      <thead>
+          <tr>
+              <th>DATE</th>
+              <th>SHIPMENT PICKED</th>
+              <th>EXCEPTION</th>
+              <th>IN TRANSIT</th>
+              <th>DELIVERED</th>
+              <th>RTO IN-TRANSIT</th>
+              <th>RTO DELIVERED</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let element of dataSource">
+              <td>{{ element.date }}</td>
+              <td>{{ element.pickupCount }} </td>
+              <td>{{ element.exception }} </td>
+              <td>{{ element.transit }} </td>
+              <td>{{ element.delivered }} </td>
+              <td>{{ element.rto }} </td>
+              <td>{{ element.RTOdelivered }} </td>
+          </tr>
+      </tbody>
+  </table>
+</div>

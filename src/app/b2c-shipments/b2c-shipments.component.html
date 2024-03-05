@@ -1,0 +1,87 @@
+<div class="cotainer-fluid" style="background-color: #fff;">
+    
+    <div class="header-body">
+        <div class="heading">
+            <span class="rect"></span>
+            <h4> Shipments</h4>
+        </div>
+        <div class="buttons">
+            <button type="button" class="btn btn-outline-dark btn-sm" ><i class="bi bi-gear-wide-connected"></i><i class='bx bx-printer'></i></button>
+            <button type="button" class="btn btn-outline-dark btn-sm">Export</button>
+            <button type="button" class="btn btn-outline-dark btn-sm"><i class='bx bx-printer'></i>Manifest</button>
+            <button type="button" class="btn btn-outline-dark show_hide_filter btn-sm" (click)="toggleFilters()"> Filters </button>
+        </div>
+    </div>
+    
+    <div class="button-group">
+        <button type="button" class="btns" (click)="filterStatus('All');">All</button>
+        <div class="inside dropdown">
+            <button type="button" class="btns">Booked</button>
+            <div id="dropdownContent" class="dropdown-content" style="left: 0;">
+                <button class="btni" >Booked</button>
+                <button class="btni" >Proccessing</button>
+            </div>
+        </div>
+        <button type="button" class="btns" (click)="filterStatus('Pending Pickup');">Pending Pickup</button>
+        <button type="button" class="btns" (click)="filterStatus('In Transit');">In Transit</button>
+        <button type="button" class="btns" (click)="filterStatus('Out for Delivery');">Out for Delivery</button>
+        <button type="button" class="btns" (click)="filterStatus('Delivered');">Delivered</button>
+        <div class="inside dropdown">
+            <button type="button" class="btns">More</button>
+            <div id="dropdownContent" class="dropdown-content">
+                <button class="btni" (click)="filterStatus('Cancelled');">Cancelled</button>
+                <button class="btni">Damaged</button>
+                <button class="btni">RTO All</button>
+                <button class="btni">RTO in Transit</button>
+                <button class="btni">RTO Delivered</button>
+                <button class="btni">RTO Lost</button>
+                <button class="btni">RTO Damaged</button>
+                <button class="btni" style="text-align: start; display: flex;">RTO Acknowledged</button>
+            </div>
+        </div>
+    </div>
+    <div class="table">
+        <table class="table table-responsive">
+            <thead>
+                <tr style="text-transform: uppercase;">
+                    <th><input type="checkbox" name="" id=""></th>
+                    <th>Channel</th>
+                    <th>Order</th>
+                    <th>Date</th>
+                    <th>product</th>
+                    <th>payment</th>
+                    <th>method</th>
+                    <th>customer</th>
+                    <th>carries</th>
+                    <th>awb</th>
+                    <th>tags</th>
+                    <th>status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr  *ngFor="let shipment of fliterShipments">
+                    <td><input type="checkbox" name="" id=""></td>
+                    <td>{{ shipment.channel }}</td>
+                    <td>{{ shipment.orderID }}</td>
+                    <td>{{ shipment.date }}</td>
+                    <td>{{ shipment.product }}</td>
+                    <td>{{ shipment.payment }}</td>
+                    <td>{{ shipment.pMethod }}</td>
+                    <td>{{ shipment.customer }}</td>
+                    <td>{{ shipment.carrier }}</td>
+                    <td>{{ shipment.tags }}</td>
+                    <td>{{ shipment.AWB }}</td>
+                    
+                    <td><button type="button" type="button" 
+                        [ngClass]="getStatusButtonClass(shipment.status)" >{{ shipment.status }}</button></td>
+                 
+                </tr>
+                <tr *ngIf="fliterShipments.length === 0">
+                    <td colspan="12" class="text-center">No products found</td>
+                  </tr>
+            </tbody>
+        </table>
+          
+          
+    </div>
+    </div>

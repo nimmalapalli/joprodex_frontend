@@ -1,0 +1,87 @@
+<div class="container-fluid"  >
+  <div class="card-header">
+    <h4>B2B Orders</h4>
+    <div class="group ">
+        <button class="btn btn-outline-dark btn-sm">Export</button> 
+        <button class="btn btn-outline-dark btn-sm">Refresh</button> 
+        <button class="btn btn-outline-dark btn-sm">Import</button> 
+        <button class="btn btn-outline-dark btn-sm"  (click)="toggleCreateOrder()">Create  Order <span id="drop"></span></button>  
+        <div class="dropdown" *ngIf="showDropdown">
+          <ul>
+            <li><a routerLink="/forward-create">+ Create Forward Order</a></li>
+            <li><a routerLink="/reverse">+ Create Reverse Order</a></li>
+            <li><a routerLink="/reverse-qc-order">+ Create Reverse QC Order</a></li>
+          </ul>
+        </div>
+        <button class="btn btn-outline-dark btn-sm">Filters</button> 
+        <button type="button" class="btn btn-outline-dark show_hide_filter btn-sm" style="display:none;"> Close </button>
+        <!-- <button class="btn btn-sm btn-dark" title="How to Process B2b Orders" data-toggle="modal" data-target="#exampleModalCenter"></button> -->
+    </div>
+</div>
+       
+      <div class="row border-top my-3 py-2 ">
+        <div class="col-sm-10">
+          <div class="btn-group-sm" role="group">
+            <a routerLink="#" class="btn btn-outline-dark btns" (click)="showOrdersByStatus('All')">All Orders</a>
+            <a routerLink="#" class="btn btn-outline-dark" (click)="showOrdersByStatus('Not Shipped')">Not Shipped ({{ countOrdersByStatus('Not Shipped') }})</a>
+            <a routerLink="#" class="btn btn-outline-dark" (click)="showOrdersByStatus('Booked')">Booked ({{ countOrdersByStatus('Booked') }})</a>
+            <a routerLink="#" class="btn btn-outline-dark" (click)="showOrdersByStatus('Cancelled')">Cancelled ({{ countOrdersByStatus('Cancelled') }})</a>
+            <a routerLink="#" class="btn btn-outline-dark" (click)="showOrdersByStatus('Testing')">Testing ({{ countOrdersByStatus('Testing') }})</a>
+            <a routerLink="#" class="btn btn-outline-dark btnl" (click)="showOrdersByStatus('Test')">Test ({{ countOrdersByStatus('Test') }})</a>
+          </div>
+        </div>
+        <div class="col-sm-2 ">
+          <a href="#" class="text-primary add_segment_button" data-segment-id="" style="text-decoration: none;" >
+            <b>Add Segment</b>
+          </a>
+        </div>
+      </div>
+      
+      
+    
+       <div style="overflow-x: auto;">
+        <table  class="table">
+          <thead>
+            <tr>
+              <th><input type="checkbox"></th>
+              <th>CHANNEL</th>
+              <th>ORDER</th>
+              <th>DATE</th>
+              <th>PRODUCT</th>
+              <th>PAYMENT</th>
+              <th>METHOD</th>
+              <th>CUSTOMER</th>
+              <th>PHONE</th>
+              <th>WEIGHT</th>
+              <th>IVR STATUS</th>
+              <th>SHOPIFY TAG</th>
+              <th>TAGS</th>
+              <th>STATUS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let s of filteredOrderDetails">
+              <td></td>
+              <td>Custom</td>
+              <td>{{s.order}}</td>
+              <td>{{s.date}}</td>
+              <td>{{s.product}}</td>
+              <td>{{s.payment}}</td>
+              <td>PREPAID</td>
+              <td>{{s.customer}}</td>
+              <td>{{s.phone}}</td>
+              <td>{{s.weight}}</td>
+              <td>{{s.ivrStatus}}</td>
+              <td>{{s.shopifyTag}}</td>
+              <td>{{s.tags}}</td>
+              <td class="text-center"> <button [ngClass]="{'btn-outline-success': s.status !== 'Cancelled', 'btn-outline-danger': s.status === 'Cancelled'}" class="btn btn-sm">{{ s.status }}</button></td>
+            </tr>
+          </tbody>
+        </table>
+        <div *ngIf="filteredOrderDetails.length === 0" class="alert alert-info mt-3 text-center">
+          No orders found.
+        </div>
+        
+       </div>
+    
+</div>

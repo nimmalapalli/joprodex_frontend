@@ -1,0 +1,93 @@
+
+
+.container{
+   margin-top: -400px;
+    text-align: center;
+}
+.content{
+    font-size:30px;
+    color:white;
+    
+}
+.main-container{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center;
+}
+.about-container{
+    font-size:20px;
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center;
+}
+.about-container-c{
+    width:80%;
+}
+.vision-container{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:space-evenly;
+    column-gap: 20px;
+    row-gap:20px;
+    padding: 2%;
+}
+.vision-container-c{
+    width: 450px;
+    height:450px;
+    background:white;
+    border-radius:30px;
+}
+.vision-content{
+    font-size:20px;
+    font-weight:300;
+}
+.mission-container{
+    
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:space-evenly;
+    column-gap: 20px;
+    row-gap:20px;
+}
+.mission-contaniner-c{
+    width: 450px;
+    height:400px;
+    background:white;
+    border-radius:30px;
+}
+.mission-content{
+    font-size:20px;
+    font-weight:200;
+
+}
+.ourvalues-container{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:space-evenly;
+    column-gap:20px;
+    row-gap:20px;
+    padding: 2%;
+
+}
+.ourvalues-container-c{
+    width:270px;
+    height:270px;
+    background:white;
+    border: 2px solid red;
+
+}
+.ourvalues-content{
+
+    font-size:20px;
+    font-weight:100;
+
+}
+.ourvalues-container-c:hover{
+    background-color: red;
+    
+}

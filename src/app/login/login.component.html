@@ -1,0 +1,42 @@
+<div class="signin-card">
+
+
+<mat-card class="card-l">
+  <img src="./assets/Joprodexcourier.png" alt="" ><br>
+        <form class="example-form" [formGroup]="loginForm" >
+          <div class="btn-container">
+            <mat-form-field class="form-field" appearance="outline">
+              <mat-label>Enter your email</mat-label>
+              <input type="email" matInput placeholder="pat@example.com" formControlName="email" required>
+             
+            </mat-form-field>
+         
+          <mat-form-field  class="form-field" appearance="outline">
+            <mat-label>Enter your password</mat-label>
+            <input type="password" matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+              <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+       
+            <br>
+
+                <button mat-raised-button color="primary" (click)="login()"   >Login</button>  <br><br>
+                <p>Don't have account register here<a routerLink="/register" style="text-decoration: none;">Register here</a></p>
+              </div>
+              
+        
+             
+          </form>
+  
+  
+  </mat-card>
+
+
+</div>
+
+<div class="container"   *ngIf="loading$ | async">
+<mat-progress-spinner
+  [mode]="'indeterminate'"
+
+></mat-progress-spinner></div>

@@ -1,0 +1,70 @@
+
+
+.Manifest-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+}
+p{
+    font-weight: 500;
+}
+.btn{
+    margin: 0 10px;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 12px;
+    font-size: 16px;
+}
+#btn1{
+    background-color: transparent;
+    color: #000;
+}
+i{
+    margin: 0 6px 0 0;
+}
+#rect{
+    font-size: 12.5px;
+    padding: 2px;
+    border: 2.5px solid #000;
+}
+.timeDetails{
+    padding: 10px;
+    background-color: #ffff;
+    /* Horizontal offset, Vertical offset, Blur radius, Spread radius, Color */
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin: 10px auto;
+}
+table {
+    width: 90%;
+    padding: 20px;
+    background-color: #ffff;
+    /* Horizontal offset, Vertical offset, Blur radius, Spread radius, Color */
+   
+    margin: 10px auto;
+  }
+  th{
+    color: #006096;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  td{
+    font-size: 12px;
+    color: #222;
+  }
+  #download{
+    font-size: 18px;
+    padding: 5px;
+    border: 1px solid #3685b3;
+    color: #3685b3;
+    border-radius: 3px;
+  }
+  .table{
+    display: flex;
+    justify-content: center;
+  }
+  .mat-elevation-z8{
+    width: 80vw;
+  }

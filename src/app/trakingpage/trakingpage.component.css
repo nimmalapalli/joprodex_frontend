@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    font-family: Poppins,sans-serif;
+}
+.box-container{
+    display: flex;
+    margin: 50px 40px;
+    justify-content: space-between;
+    
+}
+
+label,input{
+    font-size: 18px;
+    color: #425465;
+    
+}
+input{
+    margin: 10px 4px;
+}
+.custom-file-input{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 30px;
+    margin: 0;
+    opacity: 0;
+    
+}
+.custom-file{
+        position: relative;
+}
+.custom-file-label{
+   position: absolute;
+   left: 0;
+   top: 0;
+   padding: 8px 14px;
+}
+.form-group,.check{
+    margin: 20px 10px;
+}
+.input-group-text{
+    padding: 5px;
+    height: 40px;
+    margin: 12px 0;
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    font-size: 15.75px;
+    color: #fff;
+    background: #00CE4D;
+    margin: 10px 0 0;
+    padding: 5px 10px;
+    border-radius: 18px;
+}
+small>span{
+    color: #00CE4D;
+    display: block;
+}
+small{
+    font-size: 15px;
+}
+.custom-file{
+    border: 1px solid #f8eeee;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: #fff;
+    margin: 10px 4px;
+
+}
+.btn-dark{
+    background-color: #222;
+}
+.leftbox{
+    width: 30%;
+}
+.rightbox{
+     display: flex; 
+    position: relative;
+    overflow: hidden;
+    z-index: 3;
+    width: 50%;
+}
+h4{
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    font-weight: 550;
+    position: relative;
+    z-index: 3;
+}
+p{
+    text-align: start;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.4;
+    position: relative;
+    z-index: 3;
+}
+img{
+    position: relative;
+    z-index: 3;
+}
+.gift{
+    text-align: center;
+}
+.traking-bg{
+    position: absolute;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+    right: -110px;
+    top: -130px;
+   
+    z-index: 1;
+    background: linear-gradient(rgb(0, 179, 255),rgb(132, 0, 255));
+}
+.tab-pane{
+    background-color: #eaebec;
+    border-radius: 10px;
+}
+#pills-tabContent{
+    background-color: #d5d6d6;
+    padding: 20px;
+    margin: -20px 0;
+    border-radius:o 10px 10px 10px;
+}
+.home{
+    border-radius: 10px 10px 0 0;
+    background-color: #eaebec;
+    color: #111266;
+    padding: 14px 12px;
+    font-size: 18px;
+    margin-right: 6px;
+   
+}
+.box-item{
+    display: flex;
+    justify-content: center;
+}
+/* .home:hover{
+    background-color: #222;
+ } */
+.home.active{
+    background-color: #222;
+    color: #fff;
+}
+.rightbox{
+    width: 60%;
+}
+@media (max-width:900px) {
+    .box-container{
+        flex-direction: column;
+    }
+    .rightbox{
+        width: auto;
+    }
+    .leftbox{
+        width: auto;
+    }
+    img{
+        height: 200px;
+    }
+}
+@media (max-width:500px) {
+
+    .traking-bg{
+        
+        height: 300px;
+        width: 300px;
+        right: -80px;
+        top: -80px;
+    }
+   
+   
+
+}
+@media (max-width:500px) {
+
+    .traking-bg{
+        height: 200px;
+        width: 200px;
+        right: -50px;
+        top: -30px;
+    }
+    img{
+        height: 100px;
+    }
+    
+
+}

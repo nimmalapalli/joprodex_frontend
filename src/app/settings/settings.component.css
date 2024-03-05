@@ -1,0 +1,19 @@
+
+
+.card-container {
+    flex: 0 0 calc(33.333% - 20px); /* Adjust the width based on your layout */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px; 
+    background-color: #fff; /* Card background color */
+}
+
+.card-container:hover {
+    transform: translateY(-5px);
+}
+

@@ -1,0 +1,26 @@
+
+h1{
+    margin-left: 30px;
+}
+p{
+    margin-left: 30px;
+}
+.s{
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    margin-left: 30px;
+    border: 1px solid skyblue;
+    background-color: white;
+    
+}
+.sbt{  
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 160px;
+    background-color: skyblue;
+    border: none;
+    cursor: pointer;
+
+}

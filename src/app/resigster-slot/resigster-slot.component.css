@@ -1,0 +1,135 @@
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+.main-cotainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    padding: 20px 0;
+    background-color: #eaebee;
+}
+.prev,.next{
+    opacity: 0.6;
+}
+.container{
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin: 3vw 0;
+}
+.info-container{
+    border-right:1px solid #999;
+    padding: 10px;
+}
+p{
+    margin: 10px 4px;
+    line-height: 1.5;
+    color: #777;
+}
+i{
+    padding: 5px 5px 0 0;
+}
+h4{
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.month {
+    padding: 10px;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding:  0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.month ul li {
+    font-size: 18px;
+  text-transform: capitalize;
+  padding: 0 10px;
+}
+
+
+.weekdays {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+}
+
+.days {
+  padding: 5px 0;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:16px;
+  margin: 12px 0;
+  padding: 8px 0;
+  color: #777;
+}
+
+.days li .active {
+  padding: 4px;
+  background: #0069ff11;
+  border-radius: 50%;
+  color: #0060E6
+}
+#timezones{
+    border: none;
+    font-size: 16px;
+}
+.timezone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+  .container{
+    flex-direction: column;
+  }
+}
+@media screen and (max-width:900px) {
+    
+    .container{
+      flex-direction: column;
+    }
+    .info-container{
+        border-right: none;
+        border-bottom:1px solid #777 ;
+    }
+    .main-cotainer{
+        height: 100%;
+    }
+  }
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}

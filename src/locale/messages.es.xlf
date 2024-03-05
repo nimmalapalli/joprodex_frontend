@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-Us" datatype="plaintext" original="ng2.template">
+    <body>
+      <!-- <trans-unit id="1347496826842383675" datatype="html">
+        <source>“Be curious always! For knowledge will not acquire you; <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> you must acquire it”. – Sudie Back</source>
+        <target></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit> -->
+      <trans-unit id="2576632736283417544" datatype="html">
+        <source>Domestic Shipping</source>
+         <target>Livraison domestique</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <!-- <trans-unit id="8851764279409261137" datatype="html">
+        <source>Different Shipping Statuses After an Order is Dispatched</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1655007491055876030" datatype="html">
+        <source>by Deepika. | Oct 31, 2023</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2101932002151377934" datatype="html">
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> Online shopping is no small phenomenon; it&apos;s an industry estimated to reach a staggering... <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">18,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6509823556772975035" datatype="html">
+        <source>What is a Logistics Company and What do they do?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6941057511945746267" datatype="html">
+        <source> Logistics can be the competitive edge for any business in a rapidly evolving,... </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">33,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1261488275064115199" datatype="html">
+        <source>Difference Between Logistics and Transportation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4934247841995432633" datatype="html">
+        <source> by Deepika. | Oct 30, 2023</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3540127934700939500" datatype="html">
+        <source> Logistics and transportation are two terms that consistently echo through warehouses and... </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2831385080734753958" datatype="html">
+        <source>global shipping</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6525892122784990554" datatype="html">
+        <source>How to Import Goods from China to India: A Step-by-Step Guide</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5253619920658946549" datatype="html">
+        <source>by Deepika. | Oct 30, 2023</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5652791954635409132" datatype="html">
+        <source> India&apos;s trade with China soared to an all-time high of $135.98 billion in 2022. Despite... </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="822540346737522384" datatype="html">
+        <source>The Best International Buyers Websites to Find Genuine Buyers for Export</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9007282196538805712" datatype="html">
+        <source> Just ponder this – how often have businesses ventured into international markets only to... </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">81,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8439214809610009893" datatype="html">
+        <source>How to Export from India?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8760946081983567158" datatype="html">
+        <source> by Deepika. | Oct 26, 2023</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">93</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="419526701676664283" datatype="html">
+        <source> If you&apos;ve ever wondered how to tap into India&apos;s export market and contribute to the... </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">96,98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="302742014174994730" datatype="html">
+        <source>What is Physical Inventory Count, Its Methods and Importance? </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">110,111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2611473199283845193" datatype="html">
+        <source> by Deepika. | Oct 29, 2023</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">112</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2887612273299241055" datatype="html">
+        <source><x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/> In eCommerce, a minor discrepancy in stock levels can lead to significant operational... <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/blog/blog.component.html</context>
+          <context context-type="linenumber">115,117</context>
+        </context-group>
+      </trans-unit> -->
+    </body>
+  </file>
+</xliff>

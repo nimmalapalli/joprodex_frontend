@@ -1,0 +1,47 @@
+
+.container{
+    /* width: 50vw; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+p{
+    font-size: 14px;
+    padding: 4px 7px;
+    display: flex;
+    align-items: center;
+}
+.head{
+    margin: 10px 0;
+}
+a{
+    text-decoration: none;
+    color: #222;
+    font-size: 14px;
+    padding: 1px 7px;
+    display: block;
+}
+.container-2{
+    display: flex;
+    justify-content: space-between;
+}
+.box p{
+    font-size: 26px;
+    font-weight: 600;
+}
+h2{
+    opacity: 0.7;
+}
+.head a{
+    font-size: 1.3rem;
+}
+.container-1,.FAQs-container{
+    border-bottom: 1px solid #4CAF50;
+}
+a:hover{
+    text-decoration: underline;
+}
+.shipment-container  a:hover{
+    text-decoration: underline;
+    color: #72b2dd;
+}

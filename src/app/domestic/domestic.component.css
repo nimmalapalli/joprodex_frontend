@@ -1,0 +1,130 @@
+.domesic-img{
+    width:100%;
+}
+.client-p {
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    text-align: center;
+    
+}
+.client-values-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 2%;
+    text-align: center;
+    
+    
+}
+.client-c{
+    width: 1000px;
+    height: 200px;
+    
+}
+.client-c-form{
+    width: 1000px;
+    height: 200px;
+   
+}
+.client-values-c{
+    width: 150px;
+    height: 120px;
+   
+    
+}
+.btn:hover{
+    background-color:blue ;
+    
+}
+.steps-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    text-align: center;
+   
+}
+.steps-details-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 2%;
+    
+}
+.steps-c{
+    text-align: center;
+}
+.steps-details-c{
+    width: 150px;
+    height: 120px;
+    
+}
+.btn:hover{
+    background-color:red ;
+    
+}
+.steps-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    text-align: center;
+    padding: 2%;
+}
+.steps-details-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    
+}
+.steps-c{
+    text-align: center;
+}
+.why-Choose-c{
+    width: 300px;
+    height: 200px;
+}
+.customer-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    text-align: center;
+    padding: 2%;
+}
+.customer-details-p{
+    display:flex;
+    flex-flow: wrap row;
+    align-items: center;
+    justify-content:center ;
+    column-gap: 20px;
+    row-gap: 20px;
+    
+}
+.customer-c{
+    width: 500px;
+    height: 300px;
+}
+.btn{
+    background: black;
+    color: white;
+}

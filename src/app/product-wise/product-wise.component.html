@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="container-head">
+        <label for="">Date Range:</label>
+        <input type="text" autocomplete="off" data-start-data="2023-10-21" data-end-time="2023-11-20" class="Data-range">
+    </div>
+    <div class="select">
+         <label for="method">Method:</label>
+        <input type="text" placeholder="Product name to Search" [(ngModel)]="productName">
+    </div>
+    <div class="button">
+        <button id="btn1" (click)="applyFilter()">Apply</button>
+        <button id="btn2" (click)="clearFilter()">Clear</button>
+    </div>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-hover table-sm table-bordered">
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Total Shipments</th>
+        <th>Booked</th>
+        <th>Pending PickUp</th>
+        <th>In Transit</th>
+        <th>Delivered</th>
+        <th>RTO</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of filteredProducts">
+        <td>{{ product.products }}</td>
+        <td>{{ product.total }}</td>
+        <td>{{ product.booked }}</td>
+        <td>{{ product.pendingPickUp }}</td>
+        <td>{{ product.inTransit }}</td>
+        <td>{{ product.delivered }}</td>
+        <td>{{ product.rto }}</td>
+      </tr>
+      <tr *ngIf="filteredProducts.length === 0">
+        <td colspan="7" class="text-center">No products found</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

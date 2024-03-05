@@ -1,0 +1,123 @@
+<ul type="square">
+    <h2><li>Document orders</li> </h2></ul>
+    
+<div class="exp">
+    <button type="Export" class="e1" >Export</button>
+     <button type="CSV Update" class="e1">CSV Update</button>
+     <button type="Filters" class="e1">Filters</button>
+     
+</div>
+
+
+<br>
+<div class="ts"> 
+
+
+<div class="e2">
+     <label for="From date:">from date:</label> <br>
+    <select type="text" id="From Date" value="10|26|23-11|25|23" class="ap">
+        <option value="10|26|23-11|25|23y">10|26|23-11|25|23 </option>
+        <option value="Today">Today </option>
+        <option value="Yesturday">Yesturday </option>
+        <option value="Last 7 Days">Last 7 Days</option>
+        <option value="Last 30 Days"> Last 30 Days</option>
+        <option value="This month">This month</option>
+        <option value="last month">last month</option>
+        <option value="Life time"> Life time</option>
+        <option value="Custom Range">Custom Range </option>
+       
+        </select>       
+</div>
+
+<div class="e2">
+    <label for="Order ID(s):">Order ID(s):</label><br>      
+<input type="text" id="enter order ids separated by comm" value="enter order ids separated by comm" class="ap">
+
+</div>
+<div class="e2">
+        <label for="Product Name:">Product Name:</label><br>
+<input type="text" id="Product Name:" value="Product name to" class="ap">
+
+
+</div>
+<div class="e2">
+        <label for="search Query:">search Query:</label><br>
+        <input type="text" id="search anything:" value="search anything" class="ap">
+</div>
+<div class="e2">
+        <label for="Type:">Type:</label><br>
+<select type="text" id="All" value="all" class="ap">
+<option value="All"> All</option>
+<option value="Prepared"> Prepared</option>
+</select>   
+</div>
+<div class="e2">
+        <label for="IVR Verification:">attempts:</label><br>
+
+<select type="text" id="IVR Verification" value="all" class="ap">
+<option value="All"> All</option>
+<option value="verified">verified</option>
+<option value="cancelled">cancelled</option>
+</select>     
+</div>
+<div class="e2">
+        <label for="whatsapp status:">whatsapp status:</label><br>
+
+<select type="text" id="whatsapp status" value=" whatsapp status" class="ap">
+     <option value="All"> All</option>
+<option value="confirm">confirm </option>
+<option value=" cancelled"> cancelled</option>
+<option value=" Address change"> adress change</option>
+</select>
+
+</div>
+<br>
+    <div class="e2"> 
+            <label for="Order tag(s):"> Ordertag(s):</label><br>
+  <input type="text" id="tags" value="tag name here" class="ap"> 
+</div>
+
+    
+    <div class="p">
+        <button type="apply" class="p1" >apply</button>
+         <button type="clear" class="p2"> clear</button>
+        </div>
+    </div>
+    
+    <hr>
+    <div class="PTO">
+        <button type="all orders" class="p3" routerLink="/power">all Orders</button>
+        <button type="Not shipped(0)" class="p4">Not shipped(0)</button>
+        <button type="Bokked(0)" class="p3" >Booked(0)</button>
+        <button type="cancelled(0)" class="p3" routerLink="/cancelled">cancelled(7)</button>
+        <button type="Testing" class="p3">Testing</button> 
+        <button type="Test(0)" class="p3">Test(0)</button> 
+     </div>
+     <hr>
+    <table>
+        <th><tr>
+            <input type="checkbox"> </th>
+            
+            <th>CHANNEL</th>
+            <th>ORDER</th>
+            <th> DATE</th>
+            <th>PRODUCT</th>
+            <th>PAYMENT</th>
+            <th>METHOD</th>         
+            <th>CUSTOMER</th>
+            <th>PHONE</th>
+            <th>WEIGHT</th>
+            <th>WHATSAPP STATUS</th>
+            <th>TAGS</th>
+            <th> STATUS</th>
+    </table>
+    <select name="50" class="e10">
+        <option value="50">50</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+        <option value="300">300</option>
+      </select>
+      <p>No Records Found</p>

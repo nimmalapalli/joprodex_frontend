@@ -1,0 +1,30 @@
+
+  
+  .example-full-width {
+    width: 300px;
+  }
+  .example-form{
+  padding: 2%;
+  }
+
+ 
+  .register-child{
+    width: 400px;
+  
+  }
+  .register-parent{
+    display: flex;
+    flex-flow: wrap row ;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://jdcorporateblog.com/wp-content/uploads/2019/11/EPAL.jpg');
+   height: 100%;
+  }
+  .upload-parent{
+    display: flex;
+    flex-flow: wrap column ;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+  }

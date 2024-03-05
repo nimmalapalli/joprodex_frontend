@@ -1,0 +1,28 @@
+<div class="container-fluid">
+    
+    <h1 *ngIf="selectedButtonText"> {{ selectedButtonText }}</h1>
+
+<div style="display: flex; ">
+  <button routerLink="/reports/custom-reports" routerLinkActive="active-link" (click)="updateSelectedText('Custom Reports')">Custom Reports</button>
+  <button routerLink="/reports/daily-summary" routerLinkActive="active-link" (click)="updateSelectedText('Daily Summary')">Daily Summary</button>
+  <button routerLink="/reports/product-summary" routerLinkActive="active-link" (click)="updateSelectedText('Product Summary')">Product Summary</button>
+  <button routerLink="/reports/state-summary" routerLinkActive="active-link" (click)="updateSelectedText('State Summary')">State Summary</button>
+  <button routerLink="/reports/ndr-reasons" routerLinkActive="active-link" (click)="updateSelectedText('NDR Reasons')">NDR Reasons</button>
+  <button routerLink="/reports/shipment-summary" routerLinkActive="active-link" (click)="updateSelectedText('Shipment Summary')">Shipment Summary</button>
+  <div style="position: relative;">
+    <button  (click)="toggleCreateOrder()">More <span id="drop"></span></button>  
+  <div class="dropdown" *ngIf="showDropdown">
+    <a  routerLink="/reports/zone-wise" routerLinkActive="active-link" (click)="updateSelectedText('Zone Summary')">Zone Wise</a>
+    <a routerLink="/reports/courier-wise" routerLinkActive="active-link" (click)="updateSelectedText('Courier Summary')">Courier Wise</a>
+    <a routerLink="/reports/channel-wise" routerLinkActive="active-link" (click)="updateSelectedText('Channel Summary')">Channel Wise</a>
+  </div>
+  </div>
+  
+</div>
+
+
+<div class="router">
+    <router-outlet></router-outlet>
+</div>
+
+</div>

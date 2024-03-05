@@ -1,0 +1,75 @@
+<div class="container">
+    <div class="Weight-container">
+        <p><i class="bi bi-bag-fill"></i>Weight Reconciliation</p>
+        <div class="filters-btn btns">
+            <button class="btn" id="btn1"><i class='bx bxs-down-arrow-circle' ></i>Export</button>
+             <button class="btn" id="btn1"><i class="bi bi-funnel-fill"></i>Filters</button>
+             <button class="btn" id="btn2"><i class="bi bi-question-square-fill"></i></button>
+        </div>
+    </div>
+    
+</div>
+<div class="button-container">
+    <button class="butn btn-1">All</button>
+    <button class="butn btn-2">Action Required</button>
+    <button class="butn btn-3">Accepted</button>
+    <button class="butn btn-4">Open Disputes</button>
+    <button class="butn btn-5">Closed Disputes</button>
+</div>
+<div class="table">
+    <div class="mat-elevation-z8">
+        <table mat-table [dataSource]="dataSource">
+      
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> <input type="checkbox"> </th>
+            <td mat-cell *matCellDef="let element"><input type="checkbox"> </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="DATE">
+            <th mat-header-cell *matHeaderCellDef> WEIGHT APPLIED DATE</th>
+            <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+          </ng-container>
+      
+          <ng-container matColumnDef="AWB NUMBER">
+            <th mat-header-cell *matHeaderCellDef> AWB NUMBER</th>
+            <td mat-cell *matCellDef="let element"> {{element.Number}} </td>
+          </ng-container>
+      
+         
+          <ng-container matColumnDef="ORDER ID">
+            <th mat-header-cell *matHeaderCellDef> 	ORDER ID</th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+          </ng-container>
+         
+          <ng-container matColumnDef="ENTERED WEIGHT">
+            <th mat-header-cell *matHeaderCellDef>ENTERED WEIGHT</th>
+            <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+          </ng-container>
+          <ng-container matColumnDef="APPLIED WEIGHT">
+            <th mat-header-cell *matHeaderCellDef>APPLIED WEIGHT</th>
+            <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+          </ng-container>
+          <ng-container matColumnDef="WEIGHT CHARGES">
+            <th mat-header-cell *matHeaderCellDef>WEIGHT CHARGES</th>
+            <td mat-cell *matCellDef="let element"> </td>
+          </ng-container>
+          <ng-container matColumnDef="PRODUCT">
+            <th mat-header-cell *matHeaderCellDef>PRODUCT</th>
+            <td mat-cell *matCellDef="let element"> {{element.product}}</td>
+          </ng-container>
+          <ng-container matColumnDef="STATUS">
+            <th mat-header-cell *matHeaderCellDef> STATUS </th>
+            <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+          </ng-container>
+      
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      
+        <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                       showFirstLastButtons
+                       aria-label="Select page of periodic elements">
+        </mat-paginator>
+      </div>
+      
+</div>

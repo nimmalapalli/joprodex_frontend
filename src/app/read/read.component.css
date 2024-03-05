@@ -1,0 +1,126 @@
+.sip1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-items: end;
+    justify-content: end; */
+    column-gap: 5px;
+}
+.sip{
+    width: 150px;
+    height: 50px;
+}
+p{
+    font-size: 16px;
+    color: rgb(21, 21, 71);
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: -50px;
+}
+.box1{
+    width: 600px;
+    height:1200px ;
+    border: 2px sloid rgb(22, 22, 78);
+    background-color:whitesmoke;
+    
+}
+.h2{
+    padding: 15px;
+    background: rgb(147, 147, 212);
+}
+.Rule{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    flex-direction: row;
+}
+.Rule1{
+    width:300px;
+    height: 30px;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+}
+.Rule2{
+    width: 100px;
+    height: 30px;
+    border: 1px solid rgb(171, 217, 235);
+    border-radius: 5px;
+
+}
+.select{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    flex-direction: row;
+
+}
+.select1{
+    width: 250px;
+    height: 30px;
+}
+.select2{
+    width: 250px;
+    height: 30px;
+}
+/* textarea{
+    width:150px;
+    height: 500px;
+} */
+.select1{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    flex-direction: row;
+
+}
+.select1{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+.select2{
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    /* border: 1px solid rgb(195, 195, 235); */
+}
+.sel2{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    flex-direction: row;
+}
+
+.select3{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    flex-direction: row;
+
+}
+.select4{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    flex-direction: row;
+
+}
+.courier{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    flex-direction: row;
+
+}
+.courier1{
+    width: 200px;
+    height: 30px;
+    /* background-color: skyblue; */
+}
+
+
+

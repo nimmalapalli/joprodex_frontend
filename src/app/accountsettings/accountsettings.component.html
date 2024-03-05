@@ -1,0 +1,31 @@
+<div class="container">
+    <form action="" [formGroup]="setChanges" (ngSubmit)="submit()">
+        <div class="input-fields" >
+            <label for="">First Name</label>
+            <input type="text" formControlName="name">
+        </div>
+        <div class="input-fields">
+            <label for="">Last Name</label>
+            <input type="text" formControlName="name">
+        </div>
+        <div class="input-fields">
+            <label for="">Email</label>
+            <input type="email" formControlName="email">
+        </div>
+        <div class="input-fields">
+            <label for="">Phone</label>
+            <input type="text" formControlName="phone">
+        </div>
+        <div class="input-fields">
+            <label for="">New Password</label>
+            <input type="password" placeholder="Enter Password" formControlName="password">
+        </div>
+        <div class="input-fields">
+            <label for="">Confirm Password</label>
+            <input type="password" placeholder="Enter Confirm Password" formControlName="cPassword">
+        </div>
+        <div class="button">
+            <button type="submit">Save Changes</button>
+        </div>
+    </form>
+</div>

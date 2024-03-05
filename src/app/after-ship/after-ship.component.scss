@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    font-family: Poppins,sans-serif;
+}
+
+.tab-pane{
+    background-color: #eaebec;
+    border-radius: 10px;
+}
+#pills-tabContent{
+    background-color: #d5d6d6;
+    padding: 20px;
+    margin: -20px 0;
+    border-radius:o 10px 10px 10px;
+}
+.home{
+    border-radius: 10px 10px 0 0;
+    background-color: #eaebec;
+    color: #111266;
+    padding: 14px 12px;
+    font-size: 18px;
+    margin-right: 15px;
+   
+}
+// .home:hover{
+//     background-color: #222;
+// }
+.home.active{
+    background-color: #222;
+}
