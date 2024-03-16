@@ -14,11 +14,15 @@
           <mat-form-field  class="form-field" appearance="outline">
             <mat-label>Enter your password</mat-label>
             <input type="password" matInput [type]="hide ? 'password' : 'text'" formControlName="password">
+            
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+
             </button>
           </mat-form-field>
-       
+          <br>
+       <a routerLink="forgetpassword">forgetpassword </a>
+       <br>
             <br>
 
                 <button mat-raised-button color="primary" (click)="login()"   >Login</button>  <br><br>

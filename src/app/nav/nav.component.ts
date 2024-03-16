@@ -40,7 +40,7 @@ export class NavComponent implements OnInit {
       this.data={_id:this.route.snapshot.params['_id']}
       router.events.forEach((event) => {
         if (event instanceof NavigationStart) {
-          if (event['url'] == '/' || event['url'] == '/register') {
+          if (event['url'] == '/' || event['url'] == '/register' || event['url'] == '/forgetpassword') {
             this.showHead = false;
           } else {
             // console.log("NU")

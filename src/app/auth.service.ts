@@ -7,7 +7,7 @@ import { catchError } from 'rxjs/operators';
 import { Gallery } from 'gallery';
 import { environment } from 'src/environments/environment.prod';
 
-
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Injectable({
   providedIn: 'root'

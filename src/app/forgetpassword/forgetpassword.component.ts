@@ -2,6 +2,8 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Component, inject } from '@angular/core';
 import { Observable, map, shareReplay } from 'rxjs';
+
+
 @Component({
   selector: 'app-forgetpassword',
   templateUrl: './forgetpassword.component.html',
@@ -15,3 +17,8 @@ export class ForgetpasswordComponent {
     shareReplay()
   );
 }
+
+
+
+
+

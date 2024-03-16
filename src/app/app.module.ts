@@ -141,8 +141,7 @@ import { ReverseQcOrderComponent } from './reverse-qc-order/reverse-qc-order.com
 import { CreateDocumentComponent } from './create-document/create-document.component';
 import { ReverseComponent } from './reverse/reverse.component';
 import { InterceptorService } from './loader/interceptor.service';
-
-
+import { ResetpasswordComponent } from './resetpassword/resetpassword.component';
 
 
 @NgModule({
@@ -230,7 +229,8 @@ KycDetailsComponent,
 FilterPipe,
 SnackbarComponent,
 EmployeesComponent,
-CreateDocumentComponent
+CreateDocumentComponent,
+ResetpasswordComponent
 
   ],  imports: [
     BrowserModule,
