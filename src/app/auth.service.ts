@@ -6,8 +6,8 @@ import { HttpClient, HttpHeaders, HttpErrorResponse, HttpParams, HttpRequest } f
 import { catchError } from 'rxjs/operators';
 import { Gallery } from 'gallery';
 import { environment } from 'src/environments/environment.prod';
-
 import { MatSnackBar } from '@angular/material/snack-bar';
+
 
 @Injectable({
   providedIn: 'root'
@@ -27,13 +27,13 @@ export class AuthService {
 
       return this.http.post(this.baseapi +`/login`,data)
     }
+   
     getprofile():Observable<any>{
       const Headers ={
          'Authorization': "Bearer " + localStorage.getItem('token'),
       
 
       }
-
       
       return this.http.get<any>(this.baseapi+`/profile/`,{headers:Headers})
     }
@@ -64,7 +64,21 @@ export class AuthService {
       return this.http.post(`http://localhost:5000/auth/read`, formData) 
   } 
 
+  forgotPassword(email: string): Observable<any> {
+    // Make an HTTP request to your backend API to initiate the forget password process
+    return this.http.post('http://localhost:8080/api/forgotpassword', email );
+  
+  }
+ 
+  
+  resetPassword(data:any): Observable<any> {
+    // Make an HTTP request to your backend API to initiate the forget password process
+    return this.http.post('http://localhost:8080/api/resetpassword', data );
+  
+  }
 
+ 
+} 
 
     
-}
+

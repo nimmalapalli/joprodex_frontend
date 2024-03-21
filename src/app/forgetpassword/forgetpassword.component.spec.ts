@@ -2,8 +2,6 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ForgetpasswordComponent } from './forgetpassword.component';
 
-
-
 describe('ForgetpasswordComponent', () => {
   let component: ForgetpasswordComponent;
   let fixture: ComponentFixture<ForgetpasswordComponent>;
