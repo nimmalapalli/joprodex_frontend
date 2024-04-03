@@ -11,21 +11,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
-
-
 import { LayoutModule } from '@angular/cdk/layout';
-
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatMenuModule } from '@angular/material/menu';
-
-
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-
 import { MatTreeModule } from '@angular/material/tree';
-
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatBadgeModule } from '@angular/material/badge';
@@ -117,7 +110,6 @@ import { ProductGstComponent } from './product-gst/product-gst.component';
 import { KycComponent } from './kyc/kyc.component';
 import { CompanyInfoComponent } from './kyc/company-info/company-info.component';
 import { KycDetailsComponent } from './kyc/kyc-details/kyc-details.component';
-
 import { ChannelComponent } from './channel/channel.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { RuleComponent } from './rule/rule.component';

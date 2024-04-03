@@ -1,17 +1,145 @@
+<!-- 
 
-<h1 mat-dialog-title>payments</h1>
 
+            <form action=""[formGroup]="recharge">
+
+              <h3>Profile</h3>
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Name</mat-label>
+                    <input matInput type="text" formControlName="name">
+                  </mat-form-field>
+                
+                </tr>
+                <tr>
+             
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Email</mat-label>
+                    <input matInput type="text" formControlName="email">
+                  </mat-form-field>
+                  </tr>
+                  <tr>
+             
+                    <mat-form-field class="example-full-width" appearance="outline">
+                      <mat-label>amount</mat-label>
+                      <input matInput type="text"  formControlNamre="amount">
+                    </mat-form-field>
+                    </tr>
+                  <tr>
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>product_name</mat-label>
+                    <input matInput type="text" formControlName="productname">
+                  </mat-form-field>
+                </tr>
+                <tr>
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>description</mat-label>
+                    <input matInput type="text" formControlName="description">
+                  </mat-form-field>
+                </tr>
+                <tr>
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Order ID</mat-label>
+                    <input matInput type="text" formControlName="orderId">
+                  </mat-form-field>
+                </tr>
+                <tr>
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Payment ID</mat-label>
+                    <input matInput type="text" formControlName="orderId">
+                  </mat-form-field>
+                </tr>
+                <tr>
+                  <mat-form-field class="example-full-width" appearance="outline">
+                    <mat-label>Razorpay Signature</mat-label>
+                    <input matInput type="text" formControlName="razorpaySignature">
+                  </mat-form-field>
+                </tr>
+                
+                </table>
+                <h1 mat-dialog-title>payments</h1>
 <mat-card class="example-card">
-
   <img mat-card-image src="https://imgs.search.brave.com/pUYCL8YqQ3QXI-Zn4wBzQ9qTqh_fsOslMTZc-VQ62sk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9naXZl/d3AuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzAzL1Jh/em9ycGF5LmpwZw" alt="Photo of a Shiba Inu">
  
-
 </mat-card>
 <br>
 <button mat-stroked-button color="primary" style="width: 100px;">1000</button>
 <button mat-stroked-button color="accent"style="width: 100px;">2000</button>
-<button mat-stroked-button color="warn"style="width: 100px;">500</button><br>
-<button mat-raised-button color="accent">Pay now</button>
-<div mat-dialog-actions>
-  <button mat-button mat-dialog-close>Close</button>
+<button mat-stroked-button color="warn"style="width: 100px;">500</button><br><br>
+<button mat-raised-button color="accent">Pay now</button>  -->
+<!-- <button mat-raised-button color="accent" class="btn" type="submit" id="paynowBtn" (click)="submit()">Pay now</button>
+&nbsp;
+<button mat-raised-button color="accent" (click)="verifyOrder()" >Verify Order</button>
+<div mat-dialog-actions> -->
+  <!-- <button mat-button mat-dialog-close (click)="submit()">Close</button> -->
+  <!-- <button  mat-raised-button color="accent" class="btn" type="submit" id="closeBtn" (click)="submit()" >Close</button>
 </div>
+             
+</form>   --> 
+<form [formGroup]="rechargeForm" (ngSubmit)="submit()">
+  <h3>Profile</h3>
+  <table class="example-full-width" cellspacing="0">
+    <tr>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Name</mat-label>
+        <input matInput type="text" formControlName="name" required>
+      </mat-form-field>
+    </tr>
+    <tr>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" required>
+      </mat-form-field>
+    </tr>
+    <tr>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Amount</mat-label>
+        <input matInput type="number" formControlName="amount" required>
+      </mat-form-field>
+    </tr>
+    <tr>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Product Name</mat-label>
+        <input matInput type="text" formControlName="productname" required>
+      </mat-form-field>
+    </tr>
+    <tr>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Description</mat-label>
+        <input matInput type="text" formControlName="description" required>
+      </mat-form-field>
+    </tr>
+    <tr>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Order ID</mat-label>
+        <input matInput type="text" formControlName="orderId" required>
+      </mat-form-field>
+    </tr>
+    <tr>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Payment ID</mat-label>
+        <input matInput type="text" formControlName="paymentId" required>
+      </mat-form-field>
+    </tr>
+    <tr>
+      <mat-form-field class="example-full-width" appearance="outline">
+        <mat-label>Razorpay Signature</mat-label>
+        <input matInput type="text" formControlName="razorpaySignature" required>
+      </mat-form-field>
+    </tr>
+  </table>
+  <h1 mat-dialog-title>Payments</h1>
+  <mat-card class="example-card">
+    <img mat-card-image src="https://imgs.search.brave.com/pUYCL8YqQ3QXI-Zn4wBzQ9qTqh_fsOslMTZc-VQ62sk/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9naXZl/d3AuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIwLzAzL1Jh/em9ycGF5LmpwZw" alt="Photo of a Shiba Inu">
+  </mat-card>
+  <br>
+  <button mat-stroked-button color="primary" style="width: 100px;">1000</button>
+  <button mat-stroked-button color="accent" style="width: 100px;">2000</button>
+  <button mat-stroked-button color="warn" style="width: 100px;">500</button><br><br>
+  <button mat-raised-button color="accent" class="btn" type="submit" id="paynowBtn">Pay now</button>
+  &nbsp;
+  <button mat-raised-button color="accent" (click)="verifyOrder()">Verify Order</button>
+  <div mat-dialog-actions>
+    <button mat-raised-button color="accent" class="btn" type="button" id="closeBtn" (click)="submit()">Close</button>
+  </div>
+</form>

@@ -7,6 +7,7 @@ import { catchError } from 'rxjs/operators';
 import { Gallery } from 'gallery';
 import { environment } from 'src/environments/environment.prod';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Data } from '@angular/router';
 
 
 @Injectable({
@@ -70,15 +71,53 @@ export class AuthService {
   
   }
  
-  
   resetPassword(data:any): Observable<any> {
     // Make an HTTP request to your backend API to initiate the forget password process
     return this.http.post('http://localhost:8080/api/resetpassword', data );
   
   }
+  recharge(data: any): Observable<any> {
+    return this.http.post('http://localhost:8080/api/createOrder', data);
+  }
+  // verifyOrder(data: any): Observable<any> {
+  //   return this.http.post('http://localhost:8080/api/verifyOrder', data);
+  // }
 
- 
+  
+//   verifyOrder(orderId: string, paymentId: string, razorpaySignature: string): Observable<any> {
+//     // Define the request body containing order_id and payment_id
+//     const requestBody = { orderId, paymentId, razorpaySignature };
+
+//     // Make an HTTP POST request to your server endpoint
+//     return this.http.post<any>('http://localhost:8080/api/verifyOrder', requestBody, {
+//       headers: {
+//         'Content-Type': 'application/json'
+//       }
+//     });
+// }
+
+
+
+verifyOrder(orderId: string, paymentId: string, razorpaySignature: string): Observable<any> {
+    // Define the request body containing orderId, paymentId, and razorpaySignature
+    const requestBody = { orderId, paymentId, razorpaySignature };
+
+    // Make an HTTP POST request to your server endpoint
+    return this.http.post<any>('http://localhost:8080/api/verifyOrder', requestBody, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).pipe(
+      catchError(error => {
+        // Handle error
+        console.error('Error occurred:', error);
+        return throwError('Verification failed. Please try again.');
+      })
+    );
+}
+
 } 
 
     
+
 
